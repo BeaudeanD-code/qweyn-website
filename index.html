@@ -1,189 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- [SETUP] The "brain" of the site -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qweyn | Premium US-Myanmar Logistics</title>
     
-    <!-- [FONTS] Playfair = Luxury Serif | Montserrat = Modern Sans-Serif -->
+    <!-- [FONTS] Still here -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <style>
-        /* [VARIABLES] Your Luxury Palette */
-        :root {
-            --navy: #0F2238;
-            --gold: #C8A86B;
-            --forest: #2E4A38;
-            --brown: #6B5442;
-            --cream: #FDFCF0;
-        }
-
-        /* [GLOBAL STYLES] Basic look of the whole page */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--cream);
-            color: var(--brown); /* Using Café Brown for text */
-            line-height: 1.7;
-        }
-
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-
-        /* [NAVBAR] Sticky navigation bar logic */
-        nav {
-            background-color: var(--navy);
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-logo img { height: 45px; }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: var(--gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover { color: white; }
-
-        /* [HERO SECTION] The Forest Green Headliner */
-        .hero {
-            background-color: var(--forest);
-            color: var(--gold);
-            padding: 120px 10%;
-            text-align: center;
-            border-bottom: 6px solid var(--gold);
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            letter-spacing: 4px;
-        }
-
-        .hero p {
-            color: var(--cream);
-            font-size: 1.2rem;
-            max-width: 750px;
-            margin: 0 auto;
-            font-weight: 300;
-        }
-
-        /* [SECTION LOGIC] General spacing for content */
-        .section {
-            padding: 100px 10%;
-            max-width: 1100px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .section h2 { color: var(--forest); font-size: 2.5rem; }
-
-        .accent-line {
-            width: 80px;
-            height: 2px;
-            background-color: var(--gold);
-            margin: 20px auto 40px;
-        }
-
-        /* [GRID LOGIC] The 3-column layout */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        /* [CARD STYLING] The white service boxes */
-        .card {
-            background: white;
-            padding: 40px;
-            border-top: 5px solid var(--gold);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            transition: 0.4s;
-        }
-
-        .card:hover { transform: translateY(-5px); }
-
-        .card h3 { color: var(--navy); margin-bottom: 15px; }
-
-        /* [TEAM PLACEHOLDER] Special styling for the 'Coming Soon' section */
-        .team-box {
-            background-color: var(--navy);
-            color: var(--cream);
-            padding: 80px 10%;
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        /* [FOOTER] The bottom of the page */
-        footer {
-            background-color: var(--navy);
-            color: var(--cream);
-            padding: 60px 10% 20px;
-            text-align: center;
-            border-top: 1px solid rgba(200, 168, 107, 0.2);
-        }
-
-        .footer-logo { height: 40px; margin-bottom: 30px; opacity: 0.8; }
-
-        .social-links a {
-            color: var(--gold);
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-        }
-
-        /* [RESPONSIVENESS] Makes it work on phones */
-        @media (max-width: 768px) {
-            nav { flex-direction: column; gap: 15px; }
-            .hero h1 { font-size: 2.5rem; }
-        }
-    </style>
+    <!-- [EXTERNAL CSS] This 1 line replaces the 130 lines of CSS you had before -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- [NAVIGATION] -->
+    <!-- [NAV] Still has all 4 links -->
     <nav>
         <div class="nav-logo">
-            <!-- Using ./ ensures the logo loads correctly on GitHub Pages -->
             <img src="./Logo-gold-png.png" alt="Qweyn Gold Logo">
         </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="vehicles.html">Our Fleet</a></li>
-            <li><a href="#about">Mission</a></li>
+            <li><a href="fleet.html">Our Fleet</a></li>
+            <li><a href="team.html">Team</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- [HERO] -->
+    <!-- [HERO] Forest Green Header -->
     <header class="hero">
         <h1>QWEYN</h1>
         <p>Connecting the United States and Myanmar through world-class logistics and luxury transportation solutions.</p>
     </header>
 
-    <!-- [MISSION SECTION] -->
+    <!-- [MISSION SECTION] All 3 Service Cards are here -->
     <section id="about" class="section">
         <h2>Connecting Nations</h2>
-        <div class="accent-line"></div>
+        <div class="accent"></div>
         <p style="max-width: 800px; margin: 0 auto 50px;">
             Founded with the goal of connecting the United States and Myanmar for mutual benefit, we specialize in products ranging from luxury vehicles to medical and farm equipment.
         </p>
@@ -192,7 +44,7 @@
             <div class="card">
                 <h3>Luxury Transport</h3>
                 <p>White-glove transportation services for high-end automotive assets entering the Myanmar market.</p>
-                <a href="vehicles.html" style="color: var(--gold); text-decoration: none; font-weight: 600; font-size: 0.8rem;">VIEW FLEET →</a>
+                <a href="fleet.html" style="color: #C8A86B; text-decoration: none; font-weight: 600; font-size: 0.8rem;">VIEW FLEET →</a>
             </div>
             <div class="card">
                 <h3>Medical Tech</h3>
@@ -205,14 +57,14 @@
         </div>
     </section>
 
-    <!-- [TEAM SECTION] Placeholder for now -->
+    <!-- [TEAM BOX] Still here as a placeholder -->
     <section class="team-box">
-        <h2 style="color: var(--gold); font-family: 'Playfair Display';">Leadership Team</h2>
+        <h2 style="color: #C8A86B;">Leadership Team</h2>
         <p>Our team of logistics experts is currently being finalized.</p>
         <p style="font-style: italic; opacity: 0.7;">Executive Profiles Coming Soon</p>
     </section>
 
-    <!-- [FOOTER & CONTACT] -->
+    <!-- [FOOTER] Still has Logo, Socials, and Email -->
     <footer id="contact">
         <img src="./Logo-cream-png.png" class="footer-logo" alt="Qweyn Cream Logo">
         
@@ -222,7 +74,7 @@
         </div>
 
         <p style="margin-top: 30px;">Direct Inquiries</p>
-        <a href="mailto:info@qweyn.com" style="color: var(--gold); text-decoration: none; font-size: 1.3rem; font-weight: 600;">info@qweyn.com</a>
+        <a href="mailto:info@qweyn.com" class="contact-email">info@qweyn.com</a>
 
         <p style="margin-top: 50px; font-size: 0.7rem; opacity: 0.5;">&copy; 2024 Qweyn Logistics. All rights reserved.</p>
     </footer>
