@@ -1,4 +1,4 @@
-/* [THEME VARIABLES] - The core of your brand */
+/* [VARIABLES] */
 :root {
     --navy: #0F2238;
     --gold: #C8A86B;
@@ -17,12 +17,9 @@ body {
     line-height: 1.7;
 }
 
-h1, h2, h3 { 
-    font-family: 'Playfair Display', serif; 
-    font-weight: 700;
-}
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
 
-/* [NAVIGATION] - Shared across all pages */
+/* [NAVIGATION] */
 nav {
     background-color: var(--navy);
     padding: 1rem 5%;
@@ -55,11 +52,11 @@ nav ul li a {
 
 nav ul li a:hover { color: white; }
 
-/* [HERO SECTIONS] */
+/* [HERO SECTION] */
 .hero {
     background-color: var(--forest);
     color: var(--gold);
-    padding: 100px 10%;
+    padding: 120px 10%;
     text-align: center;
     border-bottom: 6px solid var(--gold);
 }
@@ -67,22 +64,22 @@ nav ul li a:hover { color: white; }
 .hero h1 { font-size: 3.5rem; letter-spacing: 4px; margin: 0 0 15px 0; }
 .hero p { color: var(--cream); font-size: 1.2rem; max-width: 700px; margin: 0 auto; font-weight: 300; }
 
-/* [SECTION LAYOUTS] */
+/* [SECTION LOGIC] */
 .section {
-    padding: 80px 10%;
+    padding: 100px 10%;
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
 }
 
 .accent {
-    width: 60px;
+    width: 80px;
     height: 2px;
-    background: var(--gold);
-    margin: 0 auto 40px;
+    background-color: var(--gold);
+    margin: 20px auto 40px;
 }
 
-/* [GRID SYSTEM] - Used for Services and the Fleet */
+/* [GRID] */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -92,12 +89,28 @@ nav ul li a:hover { color: white; }
 .card {
     background: white;
     padding: 40px;
-    border-top: 4px solid var(--gold);
+    border-top: 5px solid var(--gold);
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     transition: 0.4s;
 }
 
 .card:hover { transform: translateY(-5px); }
+
+/* [TEAM BOX] - Fixed Centering Logic */
+.team-box {
+    background-color: var(--navy);
+    color: var(--cream);
+    padding: 100px 10%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-box h2 { color: var(--gold); margin-bottom: 20px; font-size: 2.5rem; }
+.team-box p { max-width: 600px; margin: 0 auto; }
 
 /* [FOOTER] */
 footer {
@@ -107,5 +120,6 @@ footer {
     text-align: center;
 }
 
-.footer-logo { height: 45px; margin-bottom: 20px; }
-.social-links a { color: var(--gold); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.9rem; }
+.footer-logo { height: 40px; margin-bottom: 30px; opacity: 0.8; }
+.social-links a { color: var(--gold); text-decoration: none; margin: 0 15px; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; }
+.contact-email { color: var(--gold); text-decoration: none; font-size: 1.3rem; font-weight: 600; display: block; margin-top: 10px; }
